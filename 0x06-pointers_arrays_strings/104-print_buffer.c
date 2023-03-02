@@ -31,8 +31,8 @@ void print_buffer(char *b, int size)
 				printf(" ");
 			}
 		}
-		for
-			(l = 0; l < k; l++);
+		for (l = 0; l < k; l++)
+
 		{
 			int c = *(b + j + l);
 
