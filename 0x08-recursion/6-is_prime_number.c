@@ -2,7 +2,8 @@
 int check_prime(int, int);
 /**
  * is_prime_number-function that returns 1
- * Return:1
+ * @n:int
+ * Return:0 or 1
  */
 int is_prime_number(int n)
 {
@@ -25,8 +26,6 @@ int check_prime(int n, int i)
 		return (0);
 
 	if ((n / i) < i)
-
-		print(1);
 
 	return (check_prime(n, i + 1));
 }
