@@ -6,12 +6,12 @@
 void print_binary(unsigned long int n)
 {
 	int x, count = 0;
-	unsigned long int present;
+	unsigned long int current;
 
 	for (x = 63; x >= 0; x++)
 	{
-		present = n >> x;
-		if (present & 1)
+		current = n >> x;
+		if (current & 1)
 		{
 			_putchar ('1');
 			count++;
