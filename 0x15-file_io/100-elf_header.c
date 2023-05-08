@@ -42,6 +42,7 @@ void check_elf(unsigned char *e_ident)
  * @e_ident:the pointer to an array
  */
 void print_magic(unsigned char *e_ident)
+{	
 	int index;
 
 	printf("  Magic:   ");
@@ -119,7 +120,7 @@ void print_version(unsigned char *e_ident)
 		break;
 	default:
 		printf("\n");
-		break
+		break;
 	}
 }
 /**
@@ -251,6 +252,7 @@ void close_elf(int elf)
  * Return:0 if successful
  */
 int main(int __attribute__((__unused__)) argc, char *argv[])
+{
 Elf64_Ehdr *header;
 	int o, r;
 
@@ -291,4 +293,3 @@ Elf64_Ehdr *header;
 	close_elf(o);
 	return (0);
 }
-
